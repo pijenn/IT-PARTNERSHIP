@@ -2,23 +2,20 @@ import { useState } from "react";
 import Tag from "../Component/Tag";
 
 const AboutUs = () => {
+  const [isHover, setIsHover] = useState(false);
 
-    const [isHover, setIsHover] = useState(false);
-
-    const handleHover = () => {
-        setIsHover(
-            prev => !prev
-        );
-    };
+  const handleHover = () => {
+    setIsHover((prev) => !prev);
+  };
 
   return (
-    <div className="h-fit py-10">
+    <div className="relative h-fit py-10">
+      <img
+        className="absolute -bottom-5 -right-10 rotate-90 h-96 object-cover"
+        src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684403948/Shadow1_h7wijp.svg"
+        alt="Shadow"
+      />
       <div className="flex flex-col">
-        <img
-          className="mx-auto h-10 md:h-16 w-10 md:w-16 p-2"
-          src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"
-          alt="MissingIcon"
-        />
         <Tag name="Know us better" />
         <h3 className="mx-auto font-bold text-3xl">IT Partnership</h3>
       </div>
@@ -44,21 +41,23 @@ const AboutUs = () => {
             Konsentrasi utama IT Partnership adalah untuk membantu dalam
             pengembangan dan mengatasi solusi teknologi informasi melalui
             pembuatan design dan pembangunan sebuah website.
-          </p> 
-          <div 
+          </p>
+          <div
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
-            className="flex bg-cust-light mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg">
+            className="flex bg-cust-light mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg"
+          >
             <img
               className="mx-auto h-12 md:h-16 w-12 md:w-16 p-2 -rotate-90"
               src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"
               alt="MissingIcon"
             />
-            <div 
-                className={`text-lg font-semibold w-0 flex items-center whitespace-nowrap transition-all duration-300 overflow-hidden -translate-x-5 opacity-0
+            <div
+              className={`text-lg font-semibold w-0 flex items-center whitespace-nowrap transition-all duration-300 overflow-hidden -translate-x-5 opacity-0
                     ${isHover && "w-fit p-2 mr-4 translate-x-0 opacity-100"}
-                `}>
-                Download Booklet
+                `}
+            >
+              Download Booklet
             </div>
           </div>
         </div>

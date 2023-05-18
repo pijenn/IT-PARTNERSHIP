@@ -40,10 +40,12 @@ const App = () => {
         </div>
         <div className="w-full cust-container">
           <Works />
+        </div>
+        <div className="bg-gradient-to-br from-[#C3D1F1] via-[#AEC1E9] to-[#7E99D4] w-full">
           <Services />
+        </div>
           <Testimonials />
           <Footer />
-        </div>
       </div>
     </>
   );
