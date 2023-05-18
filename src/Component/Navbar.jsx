@@ -1,18 +1,10 @@
 import { useState } from "react";
 
-const Navbar = ({ moveTo }) => {
+const Navbar = ({ moveTo, sendIsScroll }) => {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
-
-  const [isSlide, setIsSlide] = useState(false);
-
-  const handleHoverContactUs = () => {
-    setIsSlide(
-        (prev) => !prev
-    );
-  }
 
   const handleClick = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -20,14 +12,16 @@ const Navbar = ({ moveTo }) => {
 
   return (
     <div className="font-poppins">
-      <nav className="bg-cust-light sticky w-full z-20 top-0 left-0 border-gray-200 drop-shadow-md py-1">
+      <nav className={`bg-cust-light w-full z-10 top-0 left-0 border-gray-200 drop-shadow-md py-1
+        ${sendIsScroll ? "fixed transition-all duration-500" : "sticky transition-all duration-500"}
+      `}>
         <div className="cust-outer-container">
           <div className="w-full cust-container flex items-center justify-between py-4">
             <a href="/" className="flex items-center gap-x-1">
               <div className="h-14 w-14 object-cover">
                 <img src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg" alt="" />
               </div>
-              <span className="hidden md:block md:text-xl font-bold whitespace-nowrap text-cust-blue">
+              <span className="hidden md:block md:text-xl font-semibold whitespace-nowrap text-cust-blue">
                 IT Partnership
               </span>
             </a>

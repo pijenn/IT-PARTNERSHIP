@@ -17,7 +17,7 @@ const Welcoming = () => {
             </span>
           </div>
           <p className="font-medium text-center md:text-start text-base sm:text-xl lg:text-2xl xl:text-3xl mt-2">
-            Melebur ide Anda menjadi solusi digital yang terintegrasi, Hanya di
+            Melebur ide Anda menjadi solusi digital yang transparan dan terintegrasi, hanya di
             <span className="ml-2 font-bold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] to-[#FA54B8]">
               IT Partnership.
             </span>
