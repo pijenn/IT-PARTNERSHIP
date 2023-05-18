@@ -34,7 +34,11 @@ const App = () => {
         <Navbar sendIsScroll={isScroll} />
         <div className="w-full cust-container">
           <Welcoming />
+        </div>
+        <div className="bg-gradient-to-br from-[#C3D1F1] via-[#AEC1E9] to-[#7E99D4] w-full">
           <AboutUs />
+        </div>
+        <div className="w-full cust-container">
           <Works />
           <Services />
           <Testimonials />
@@ -43,6 +47,6 @@ const App = () => {
       </div>
     </>
   );
-}
+};
 
 export default App;

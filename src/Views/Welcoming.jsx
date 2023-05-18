@@ -2,7 +2,7 @@ const Welcoming = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-y-5 md:gap-y-0 md:grid-cols-12 py-5">
-        <div className="md:col-span-7 md:hidden">
+        <div className="md:col-span-7 md:hidden pointer-events-none">
           <img
             className="w-full h-full mx-auto object-cover drop-shadow-[40px_30px_40px_rgba(25,57,127,0.1)]"
             src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684393010/Vektor_Welcoming_ddcvn8.svg"
@@ -10,7 +10,7 @@ const Welcoming = () => {
           />
         </div>
         <div className="md:col-span-5 flex flex-col justify-start md:mt-48 w-full h-full">
-          <div className="flex font-extrabold mx-auto md:mx-0 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-cust-blue">
+          <div className="flex whitespace-nowrap font-extrabold mx-auto md:mx-0 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-cust-blue">
             We Build
             <span className="ml-2 bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] to-[#FA54B8]">
               Website.
@@ -23,7 +23,7 @@ const Welcoming = () => {
             </span>
           </p>
         </div>
-        <div className="hidden md:col-span-7 md:block">
+        <div className="hidden md:col-span-7 md:block pointer-events-none">
           <img
             className="w-11/12 h-11/12 mx-auto mt-20 object-cover drop-shadow-[40px_30px_40px_rgba(25,57,127,0.1)]"
             src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684393010/Vektor_Welcoming_ddcvn8.svg"
