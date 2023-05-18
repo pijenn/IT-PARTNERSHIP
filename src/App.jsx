@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Navbar from "./Component/Navbar";
 import Welcoming from "./Views/Welcoming";
 import AboutUs from "./Views/AboutUs";
@@ -6,13 +7,32 @@ import Services from "./Views/Services";
 import Testimonials from "./Views/Testimonial";
 import Footer from "./Views/Footer";
 
-function App() {
+const App = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // console.log(isScroll);
 
   return (
     <>
-      <div className="max-w-[1380px]">
-        <Navbar />
-        <div className='w-full cust-container'>
+      <div className="max-w-[1380px] mx-auto">
+        <Navbar sendIsScroll={isScroll} />
+        <div className="w-full cust-container">
           <Welcoming />
           <AboutUs />
           <Works />
@@ -22,7 +42,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
