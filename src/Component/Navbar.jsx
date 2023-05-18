@@ -20,7 +20,7 @@ const Navbar = ({ moveTo }) => {
 
   return (
     <div className="font-poppins">
-      <nav className="bg-cust-light fixed w-full z-20 top-0 left-0 border-gray-200 drop-shadow-md">
+      <nav className="bg-cust-light fixed w-full z-20 top-0 left-0 border-gray-200 drop-shadow-md py-1">
         <div className="cust-outer-container">
           <div className="w-full cust-container flex flex-wrap items-center justify-between py-4">
             <a href="/" className="flex items-center gap-x-3">
