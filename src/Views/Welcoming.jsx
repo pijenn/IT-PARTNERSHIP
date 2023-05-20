@@ -1,6 +1,6 @@
 const Welcoming = () => {
   return (
-    <>
+    <div className="w-full cust-container">
       <div className="grid grid-cols-1 gap-y-5 md:gap-y-0 md:grid-cols-12 py-5">
         <div className="md:col-span-7 md:hidden pointer-events-none">
           <img
@@ -38,7 +38,7 @@ const Welcoming = () => {
           alt="MissingIcon"
         />
       </div>
-    </>
+    </div>
   );
 };
 

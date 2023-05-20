@@ -12,14 +12,14 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
 
   return (
     <div className="font-poppins">
-      <nav className={`bg-cust-light w-full z-10 top-0 left-0 border-gray-200 drop-shadow-md py-1
-        ${sendIsScroll ? "fixed transition-all duration-500" : "sticky transition-all duration-500"}
+      <nav className={`bg-cust-light w-full z-10 fixed -translate-y-24 left-0 border-gray-200 drop-shadow-md py-1 transition-all duration-300
+        ${sendIsScroll && "translate-y-0"}
       `}>
         <div className="cust-outer-container">
           <div className="w-full cust-container flex items-center justify-between py-4">
             <a href="/" className="flex items-center gap-x-1">
               <div className="h-14 w-14 object-cover">
-                <img src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg" alt="" />
+                <img src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg" alt="MissingIMG" />
               </div>
               <span className="hidden md:block md:text-xl font-semibold whitespace-nowrap text-cust-blue">
                 IT Partnership
@@ -27,7 +27,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
             </a>
             <div className="flex md:order-2">
               <div
-                className="text-cust-blue relative overflow-hidden flex flex-col w-28 lg:w-32 h-10 ring-2 ring-cust-blue hover:drop-shadow-md cursor-pointer font-medium rounded-full text-sm text-center group hover:scale-110 transition-all duration-500"
+                className="text-cust-blue relative overflow-hidden flex flex-col w-28 lg:w-32 h-10 ring-2 ring-cust-blue hover:ring-0 hover:drop-shadow-md cursor-pointer font-medium rounded-full text-sm text-center group hover:scale-110 transition-all duration-500"
               >
                 <span className="group-hover:px-1 group-hover:py-1 h-1/2 rounded-r-full w-0 group-hover:w-40 bg-gradient-to-r from-[#FA54B8] to-[#3561C0] transition-all duration-300"></span>
                 <span className="group-hover:px-1 group-hover:py-1 h-1/2 rounded-r-full w-0 group-hover:w-40 bg-gradient-to-r from-[#FA54B8] to-[#3561C0] transition-all duration-500"></span>
@@ -45,7 +45,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen4(false);
                       handleClick(moveTo.toWelcoming);
                     }}
-                    className={`whitespace-nowrap block cursor-pointer p-1 rounded md:bg-transparent md:hover:text-cust-blue md:hover:font-semibold transition-all duration-300
+                    className={`whitespace-nowrap block cursor-pointer p-1 rounded md:bg-transparent md:hover:text-cust-blue transition-all duration-300
                     ${
                       isOpen1 ? "text-cust-blue font-semibold" : "text-cust-sky"
                     }`}
@@ -63,7 +63,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen4(false);
                       handleClick(moveTo.toCourses);
                     }}
-                    className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue md:hover:font-semibold transition-all duration-300 md:hover:bg-transparent 
+                    className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue transition-all duration-300 md:hover:bg-transparent 
                     ${
                       isOpen2 ? "text-cust-blue font-semibold" : "text-cust-sky"
                     }`}
@@ -80,7 +80,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen4(false);
                       handleClick(moveTo.toAbout);
                     }}
-                    className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue md:hover:font-semibold transition-all duration-300  md:hover:bg-transparent
+                    className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue transition-all duration-300  md:hover:bg-transparent
                     ${
                       isOpen3 ? "text-cust-blue font-semibold" : "text-cust-sky"
                     }`}
@@ -97,7 +97,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen4(true);
                       handleClick(moveTo.toContact);
                     }}
-                    className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue md:hover:font-semibold transition-all duration-300 md:hover:bg-transparent
+                    className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue transition-all duration-300 md:hover:bg-transparent
                     ${
                       isOpen4 ? "text-cust-blue font-semibold" : "text-cust-sky"
                     }`}

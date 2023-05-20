@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 90) {
         setIsScroll(true);
       } else {
         setIsScroll(false);
@@ -30,22 +30,14 @@ const App = () => {
 
   return (
     <>
-      <div className="max-w-[1380px] mx-auto">
+      <div className="max-w-[1380px] mx-auto overflow-hidden font-poppins">
         <Navbar sendIsScroll={isScroll} />
-        <div className="w-full cust-container">
-          <Welcoming />
-        </div>
-        <div className="bg-gradient-to-br from-[#C3D1F1] via-[#AEC1E9] to-[#7E99D4] w-full">
-          <AboutUs />
-        </div>
-        <div className="w-full cust-container">
-          <Works />
-        </div>
-        <div className="bg-gradient-to-br from-[#C3D1F1] via-[#AEC1E9] to-[#7E99D4] w-full">
-          <Services />
-        </div>
-          <Testimonials />
-          <Footer />
+        <Welcoming />
+        <AboutUs />
+        <Works />
+        <Services />
+        <Testimonials />
+        <Footer />
       </div>
     </>
   );
