@@ -2,11 +2,16 @@ import Tag from "../Component/Tag";
 
 const Testimonial = () => {
   return (
-    <div className="w-full h-fit py-14 p-2">
+    <div className="relative w-full h-fit py-14 p-2">
+      <img
+        className="absolute -bottom-2 right-28 h-96 object-cover opacity-60"
+        src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684403948/Shadow1_h7wijp.svg"
+        alt="Shadow"
+      />
       <div className="flex flex-col">
         <Tag name="Testimonial" />
         <div className="relative mx-auto w-4/5 md:w-3/5 lg:max-w-lg pb-6 px-6 pt-10 my-16 rounded-md drop-shadow-[0_5px_12px_rgb(0,0,0,0.2)] bg-white">
-          <div className="absolute cursor-pointer -right-5 top-1/2 -translate-y-1/2 rounded-full bg-white drop-shadow-md hover:translate-x-1 transition-all duration-300">
+          <div className="absolute cursor-pointer -right-5 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white drop-shadow-md hover:translate-x-1 transition-all duration-300">
             <img
               className="mx-auto h-12 md:h-16 w-12 md:w-16 p-2 -rotate-90 group-hover:translate-x-1"
               src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"

@@ -1,4 +1,9 @@
-const Welcoming = () => {
+const Welcoming = ({ scrollTo }) => {
+
+  const handleClick = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-full cust-container">
       <div className="grid grid-cols-1 gap-y-5 md:gap-y-0 md:grid-cols-12 py-5">
@@ -31,9 +36,13 @@ const Welcoming = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center align-middle w-full p-2">
+      <div 
+        onClick={() => {
+          handleClick(scrollTo);
+        }}
+        className="flex justify-center align-middle w-full p-2">
         <img
-          className="h-14 md:h-20 w-14 md:w-20 p-2 rounded-full hover:ring-2 hover:bg-slate-200 cursor-pointer animate-bounce transition-all duration-300"
+          className="h-14 md:h-20 w-14 md:w-20 p-2 rounded-full hover:bg-slate-200 cursor-pointer animate-bounce transition-all duration-300"
           src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"
           alt="MissingIcon"
         />

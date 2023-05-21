@@ -4,12 +4,12 @@ const ServicesCard = () => {
   return DataServices.map((item) => {
     return (
       <div
-        className="relative mx-auto md:mx-0 w-4/5 md:w-5/12 lg:w-4/12 bg-cust-light px-8 pt-24 pb-8 rounded-xl drop-shadow-2xl"
+        className="relative mx-auto md:mx-0 w-4/5 md:w-5/12 lg:w-[28%] bg-cust-light px-8 pt-24 pb-8 rounded-xl drop-shadow-2xl"
         key={item.id}
       >
-        <div className="rounded-full absolute -top-20 left-1/2 -translate-x-1/2 p-5 bg-cust-light drop-shadow-xl hover:scale-110 transition-all duration-300">
+        <div className="rounded-full absolute -top-16 md:-top-20 left-1/2 -translate-x-1/2 p-4 md:p-5 bg-cust-light drop-shadow-xl hover:scale-110 transition-all duration-300">
           <img
-          className="w-28 h-28 object-cover" 
+          className="w-24 h-24 md:w-28 md:h-28 object-cover" 
             src={item.icon} 
             alt="MissingIcon" 
         />

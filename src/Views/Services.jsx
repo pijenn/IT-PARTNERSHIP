@@ -7,7 +7,7 @@ const Services = () => {
       <div className="flex flex-col">
         <Tag name="Our services" />
       </div>
-      <div className="flex flex-col justify-center mt-24 gap-x-24 gap-y-24 md:flex-row h-fit">
+      <div className="flex flex-col justify-center mt-24 md:gap-x-12 lg:gap-x-24 gap-y-24 md:flex-row h-fit">
         <ServicesCard />
       </div>
     </div>

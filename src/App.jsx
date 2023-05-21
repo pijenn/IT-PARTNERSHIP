@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "./Component/Navbar";
 import Welcoming from "./Views/Welcoming";
 import AboutUs from "./Views/AboutUs";
@@ -9,6 +9,12 @@ import Footer from "./Views/Footer";
 
 const App = () => {
   const [isScroll, setIsScroll] = useState(false);
+
+  const toWelcoming = useRef(null);
+  const toAboutUs = useRef(null);
+  const toWorks = useRef(null);
+  const toServices = useRef(null);
+  const toTestimonials = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,18 +32,35 @@ const App = () => {
     };
   }, []);
 
-  // console.log(isScroll);
-
   return (
     <>
       <div className="max-w-[1380px] mx-auto overflow-hidden font-poppins">
-        <Navbar sendIsScroll={isScroll} />
-        <Welcoming />
-        <AboutUs />
-        <Works />
-        <Services />
-        <Testimonials />
-        <Footer />
+        <Navbar
+          sendIsScroll={isScroll}
+          moveTo={{
+            toWelcoming,
+            toWorks,
+            toAboutUs,
+            toServices,
+            toTestimonials,
+          }}
+        />
+        <div ref={toWelcoming}>
+          <Welcoming scrollTo={ toAboutUs } />
+        </div>
+        <div ref={toAboutUs}>
+          <AboutUs />
+        </div>
+        <div ref={toWorks}>
+          <Works />
+        </div>
+        <div ref={toServices}>
+          <Services />
+        </div>
+        <div ref={toTestimonials}>
+          <Testimonials />
+        </div>
+        <Footer scrollTo={ toWelcoming } />
       </div>
     </>
   );

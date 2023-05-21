@@ -27,7 +27,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
             </a>
             <div className="flex md:order-2">
               <div
-                className="text-cust-blue relative overflow-hidden flex flex-col w-28 lg:w-32 h-10 ring-2 ring-cust-blue hover:ring-0 hover:drop-shadow-md cursor-pointer font-medium rounded-full text-sm text-center group hover:scale-110 transition-all duration-500"
+                className="text-cust-blue relative overflow-hidden flex flex-col w-28 lg:w-32 h-10 ring-2 ring-cust-blue hover hover:drop-shadow-md cursor-pointer font-medium rounded-full text-sm text-center group hover:scale-110 transition-all duration-500"
               >
                 <span className="group-hover:px-1 group-hover:py-1 h-1/2 rounded-r-full w-0 group-hover:w-40 bg-gradient-to-r from-[#FA54B8] to-[#3561C0] transition-all duration-300"></span>
                 <span className="group-hover:px-1 group-hover:py-1 h-1/2 rounded-r-full w-0 group-hover:w-40 bg-gradient-to-r from-[#FA54B8] to-[#3561C0] transition-all duration-500"></span>
@@ -43,11 +43,11 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen2(false);
                       setIsOpen3(false);
                       setIsOpen4(false);
-                      handleClick(moveTo.toWelcoming);
+                      handleClick(moveTo.toAboutUs);
                     }}
                     className={`whitespace-nowrap block cursor-pointer p-1 rounded md:bg-transparent md:hover:text-cust-blue transition-all duration-300
                     ${
-                      isOpen1 ? "text-cust-blue font-semibold" : "text-cust-sky"
+                      isOpen1 ? "text-cust-blue" : "text-cust-sky"
                     }`}
                     aria-current="page"
                   >
@@ -61,11 +61,11 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen2(true);
                       setIsOpen3(false);
                       setIsOpen4(false);
-                      handleClick(moveTo.toCourses);
+                      handleClick(moveTo.toWorks);
                     }}
                     className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue transition-all duration-300 md:hover:bg-transparent 
                     ${
-                      isOpen2 ? "text-cust-blue font-semibold" : "text-cust-sky"
+                      isOpen2 ? "text-cust-blue" : "text-cust-sky"
                     }`}
                   >
                     Works
@@ -78,11 +78,11 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen2(false);
                       setIsOpen3(true);
                       setIsOpen4(false);
-                      handleClick(moveTo.toAbout);
+                      handleClick(moveTo.toServices);
                     }}
                     className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue transition-all duration-300  md:hover:bg-transparent
                     ${
-                      isOpen3 ? "text-cust-blue font-semibold" : "text-cust-sky"
+                      isOpen3 ? "text-cust-blue" : "text-cust-sky"
                     }`}
                   >
                     Services
@@ -95,11 +95,11 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
                       setIsOpen2(false);
                       setIsOpen3(false);
                       setIsOpen4(true);
-                      handleClick(moveTo.toContact);
+                      handleClick(moveTo.toTestimonials);
                     }}
                     className={`block cursor-pointer p-1 rounded md:hover:text-cust-blue transition-all duration-300 md:hover:bg-transparent
                     ${
-                      isOpen4 ? "text-cust-blue font-semibold" : "text-cust-sky"
+                      isOpen4 ? "text-cust-blue" : "text-cust-sky"
                     }`}
                   >
                     Testimonials
