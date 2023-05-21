@@ -1,7 +1,13 @@
+import Tag from "../Component/Tag";
+import WorksCard from "../Component/WorksCard";
+
 const Works = () => {
   return (
-    <div className="bg-yellow-400 h-[20vh] w-full cust-container">
-      <h1>Works</h1>
+    <div className="w-full cust-container py-14">
+      <div className="flex flex-col">
+        <Tag name="Our Work" />
+        <WorksCard />
+      </div>
     </div>
   );
 };
