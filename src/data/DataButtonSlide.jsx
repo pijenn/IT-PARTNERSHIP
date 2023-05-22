@@ -9,7 +9,7 @@ export const DataButtonSlide = [
     {
         id: 2,
         title: "WA",
-        msg: "Chat WA",
+        msg: "Chat Whatsapp",
         icon: "https://res.cloudinary.com/dr0lbokc5/image/upload/v1684648475/WA_f0jecc.svg",
         link: "",
     },

@@ -7,8 +7,8 @@ const WorksCard = () => {
       <div key={item.id} className="relative flex flex-col gap-y-24 py-8 sm:py-20">
         <img
           className={`absolute ${
-            item.id % 2 == 0 ? "-left-96" : "-right-96"
-          } top-0 pointer-events-none scale-150 object-cover opacity-70`}
+            item.id % 2 == 0 ? "-left-96 -rotate-180" : "-right-96"
+          } -top-52 pointer-events-none scale-150 object-cover opacity-70`}
           src={findIcon("Shadow")}
           alt="Shadow"
         />

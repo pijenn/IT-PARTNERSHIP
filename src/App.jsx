@@ -57,7 +57,7 @@ const App = () => {
         <div ref={toServices}>
           <Services />
         </div>
-        <div className="overflow-hidden" ref={toTestimonials}>
+        <div ref={toTestimonials}>
           <Testimonials />
         </div>
         <Footer scrollTo={ toWelcoming } />

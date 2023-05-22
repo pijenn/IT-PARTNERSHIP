@@ -22,7 +22,7 @@ const ButtonSlide = ({ name }) => {
         alt="MissingIcon"
       />
       <div
-        className={`text-lg font-semibold w-0 flex items-center whitespace-nowrap overflow-hidden transition-all duration-300 -translate-x-5 opacity-0
+        className={`text-lg text-cust-blue font-semibold w-0 flex items-center whitespace-nowrap overflow-hidden transition-all duration-500 -translate-x-5 opacity-0
                       ${isHover && "w-fit p-2 mr-4 translate-x-0 opacity-100 transition-all duration-500"}
                   `}
       >

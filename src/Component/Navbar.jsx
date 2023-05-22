@@ -27,7 +27,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
             </a>
             <div className="flex md:order-2">
               <div
-                className="text-cust-blue relative overflow-hidden flex flex-col w-28 lg:w-32 h-10 ring-2 ring-cust-blue hover hover:drop-shadow-md cursor-pointer font-medium rounded-full text-sm text-center group hover:scale-110 transition-all duration-500"
+                className="text-cust-blue relative overflow-hidden flex flex-col w-28 lg:w-32 h-10 ring-2 ring-cust-blue hover:ring-0 hover:drop-shadow-md cursor-pointer font-medium rounded-full text-sm text-center group hover:scale-110 transition-all duration-500"
               >
                 <span className="group-hover:px-1 group-hover:py-1 h-1/2 rounded-r-full w-0 group-hover:w-40 bg-gradient-to-r from-[#FA54B8] to-[#3561C0] transition-all duration-300"></span>
                 <span className="group-hover:px-1 group-hover:py-1 h-1/2 rounded-r-full w-0 group-hover:w-40 bg-gradient-to-r from-[#FA54B8] to-[#3561C0] transition-all duration-500"></span>
