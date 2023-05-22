@@ -8,8 +8,13 @@ const ButtonSlide = ({ name }) => {
     setIsHover((prev) => !prev);
   };
 
+  const handleClick = () => {
+    window.open(findButtonSlide(name).link, "_blank");
+  }
+
   return (
     <div
+      onClick={handleClick}
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
       className={`flex mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg transition-all duration-300

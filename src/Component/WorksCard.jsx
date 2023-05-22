@@ -16,9 +16,9 @@ const WorksCard = () => {
           onClick={() => {
             window.open(item.link, "_blank");
           }}
-          className={`relative overflow-hidden bg-gradient-to-b md:bg-gradient-to-r ${item.color} p-6 sm:p-12 xl:p-12 h-fit rounded-2xl drop-shadow-lg group cursor-pointer`}
+          className={`relative overflow-hidden bg-gradient-to-b md:bg-gradient-to-r ${item.color} px-6 pt-6 pb-20 sm:p-12 xl:p-12 h-fit rounded-2xl drop-shadow-lg group cursor-pointer`}
         >
-          <div className="absolute -z-40 hidden sm:flex group-hover:sm:blur-none sm:blur-none sm:-bottom-72 lg:-bottom-44 -right-96 sm:translate-x-20 xl:translate-x-64 -rotate-[10deg] md:-rotate-[20deg] lg:-rotate-[25deg] pointer-events-none transition-all duration-700 group-hover:md:translate-x-1/2 group-hover:translate-x-full group-hover:xl:translate-x-64">
+          <div className="absolute -z-40 group-hover:translate-x-5 -bottom-44 -right-60 translate-x-5 flex group-hover:sm:blur-none sm:blur-none sm:-bottom-72 lg:-bottom-44 sm:-right-96 sm:translate-x-20 xl:translate-x-64 -rotate-[10deg] md:-rotate-[20deg] lg:-rotate-[25deg] pointer-events-none transition-all duration-700 group-hover:md:translate-x-1/2 group-hover:sm:translate-x-full group-hover:xl:translate-x-64">
             <img
               className="group-hover:scale-90 md:group-hover:scale-105 transition-all duration-300 w-full object-cover"
               src={item.img}

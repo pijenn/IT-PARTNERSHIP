@@ -44,6 +44,10 @@ const AboutUs = () => {
               pembuatan design dan pembangunan sebuah website.
             </p>
             <div
+              onClick={() => {
+                window.open("https://drive.google.com/file/d/1ctLlAst4yCF4Mrf4O5oCOyJ0SgHkrl8s/view?usp=sharing", "_blank")
+              }
+            }
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
               className="flex bg-cust-light mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg"

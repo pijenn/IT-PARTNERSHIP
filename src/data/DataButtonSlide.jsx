@@ -4,14 +4,14 @@ export const DataButtonSlide = [
         title: "Line",
         msg: "Add Line",
         icon: "https://res.cloudinary.com/dr0lbokc5/image/upload/v1684648473/Line_dbhlda.svg",
-        link: "",
+        link: "https://line.me/ti/p/~Wirkananda10",
     },
     {
         id: 2,
         title: "WA",
         msg: "Chat Whatsapp",
         icon: "https://res.cloudinary.com/dr0lbokc5/image/upload/v1684648475/WA_f0jecc.svg",
-        link: "",
+        link: "https://api.whatsapp.com/send/?phone=+6281236548660&text=Halo+Saya+Tertarik+dengan+IT+Partnership&type=phone_number&app_absent=0",
     },
 ]
 

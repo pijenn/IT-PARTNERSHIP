@@ -15,6 +15,7 @@ const App = () => {
   const toWorks = useRef(null);
   const toServices = useRef(null);
   const toTestimonials = useRef(null);
+  const toFooter = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +44,7 @@ const App = () => {
             toAboutUs,
             toServices,
             toTestimonials,
+            toFooter
           }}
         />
         <div ref={toWelcoming}>
@@ -60,7 +62,9 @@ const App = () => {
         <div ref={toTestimonials}>
           <Testimonials />
         </div>
-        <Footer scrollTo={ toWelcoming } />
+        <div ref={toFooter}>
+          <Footer scrollTo={ toWelcoming } /> 
+        </div>
       </div>
     </>
   );
