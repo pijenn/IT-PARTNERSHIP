@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Atropos from "atropos/react";
 import Tag from "../Component/Tag";
 
 const AboutUs = () => {
@@ -22,10 +23,19 @@ const AboutUs = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 py-8">
           <div className="hidden md:block"></div>
-          <div className="col-span-5 w-full h-full flex items-center pb-14">
-            <span className="mx-auto font-extrabold mt-5 md:mt-0 text-8xl bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] via-[#708BC6] to-[#FA54B8]">
-              hello.
-            </span>
+          <div className="col-span-5 w-full h-full flex items-center md:pb-14">
+            <Atropos 
+              shadow={false}
+              highlight={false}
+              duration={200}
+              className="mx-auto w-96 h-96 md:pt-10 md:mt-0 drop-shadow-2xl cursor-pointer">
+              <img
+                data-atropos-offset="5"
+                className="p-2"
+                src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684741862/Man_Web_Developer_HD_1_vi1f0n.svg"
+                alt="MissingIMG"
+              />
+            </Atropos>
           </div>
           <div className="col-span-5 w-10/12 md:w-full xl:w-10/12 text-base mx-auto md:mx-0 flex flex-col gap-y-3 py-5 px-9 rounded-2xl drop-shadow-md bg-cust-light">
             <p className="text-justify leading-5">
@@ -45,9 +55,11 @@ const AboutUs = () => {
             </p>
             <div
               onClick={() => {
-                window.open("https://drive.google.com/file/d/1ctLlAst4yCF4Mrf4O5oCOyJ0SgHkrl8s/view?usp=sharing", "_blank")
-              }
-            }
+                window.open(
+                  "https://drive.google.com/file/d/1ctLlAst4yCF4Mrf4O5oCOyJ0SgHkrl8s/view?usp=sharing",
+                  "_blank"
+                );
+              }}
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
               className="flex bg-cust-light mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg"
