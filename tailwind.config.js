@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        monserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         "cust-blue": "#19397F",

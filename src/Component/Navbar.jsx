@@ -11,7 +11,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
   };
 
   return (
-    <div className="font-poppins">
+    <div className="font-monserrat">
       <nav className={`bg-cust-light w-full z-10 fixed -translate-y-24 left-0 border-gray-200 drop-shadow-md py-1 transition-all duration-300
         ${sendIsScroll && "translate-y-0"}
       `}>
