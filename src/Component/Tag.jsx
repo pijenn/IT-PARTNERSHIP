@@ -6,7 +6,7 @@ const Tag = ({ name }) => {
         src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"
         alt="MissingIcon"
       />
-      <h3 className="mx-auto font-semibold text-3xl py-1 px-4 bg-cust-light rounded-md mb-3 drop-shadow-md">
+      <h3 className="mx-auto font-semibold text-lg sm:text-3xl py-1 px-4 bg-cust-light rounded-md mb-3 drop-shadow-md">
         {name}
       </h3>
     </>

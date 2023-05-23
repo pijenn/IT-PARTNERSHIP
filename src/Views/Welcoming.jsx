@@ -1,4 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import Atropos from "atropos/react";
 
 const Welcoming = ({ scrollTo }) => {
   const handleClick = (ref) => {
@@ -16,22 +18,23 @@ const Welcoming = ({ scrollTo }) => {
           />
         </div>
         <div className="md:col-span-5 flex flex-col justify-start md:mt-48 w-full h-full">
-          <div className="flex  whitespace-nowrap font-extrabold mx-auto md:mx-0 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-cust-blue">
+          <motion.div
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { type: "spring", duration: 5, damping: 15 },
+            }}
+            className="flex  whitespace-nowrap font-extrabold mx-auto md:mx-0 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-cust-blue"
+          >
             We Build
             <span className="ml-2 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] to-[#FA54B8]">
               <TypeAnimation
-                sequence={[
-                  "Website.",
-                  1000,
-                  "UI/UX.",
-                  1000,
-                  "Design.",
-                  1000,
-                ]}
+                sequence={["Website.", 1000, "UI/UX.", 1000, "Design.", 1000]}
                 repeat={Infinity}
               />
             </span>
-          </div>
+          </motion.div>
           <p className="font-medium text-center md:text-start text-base sm:text-xl lg:text-2xl xl:text-3xl mt-2">
             Melebur ide Anda menjadi solusi digital yang transparan dan
             terintegrasi, hanya di
@@ -40,13 +43,19 @@ const Welcoming = ({ scrollTo }) => {
             </span>
           </p>
         </div>
-        <div className="hidden md:col-span-7 md:block pointer-events-none">
+        <Atropos
+          shadow={false}
+          highlight={false}
+          duration={200}
+          className="hidden md:col-span-7 md:block cursor-pointer"
+        >
           <img
-            className="w-11/12 h-11/12 mx-auto mt-20 object-cover drop-shadow-[40px_30px_40px_rgba(25,57,127,0.1)]"
+            data-atropos-offset="5"
+            className="w-11/12 h-11/12 mx-auto mt-20 object-cover"
             src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684393010/Vektor_Welcoming_ddcvn8.svg"
             alt="MissingIMG"
           />
-        </div>
+        </Atropos>
       </div>
       <div
         onClick={() => {

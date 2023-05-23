@@ -17,7 +17,7 @@ const Navbar = ({ moveTo, sendIsScroll }) => {
       `}>
         <div className="cust-outer-container">
           <div className="w-full cust-container flex items-center justify-between py-4">
-            <a href="/" className="flex items-center gap-x-1">
+            <a href="/itpartnership" className="flex items-center gap-x-1">
               <div className="h-14 w-14 object-cover">
                 <img src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg" alt="MissingIMG" />
               </div>

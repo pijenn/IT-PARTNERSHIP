@@ -17,7 +17,7 @@ const ServicesCard = () => {
         <h3 className="font-extrabold leading-10 text-center text-3xl mb-5 bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] via-[#6386D3] to-[#FA54B8]">
           {item.title}
         </h3>
-        <p className="font-medium text-lg text-justify">{item.desc}</p>
+        <p className="font-medium text-lg text-start text-[#202020]">{item.desc}</p>
       </div>
     );
   });

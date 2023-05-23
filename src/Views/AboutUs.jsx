@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Atropos from "atropos/react";
 import Tag from "../Component/Tag";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   const [isHover, setIsHover] = useState(false);
@@ -11,24 +12,36 @@ const AboutUs = () => {
 
   return (
     <div className="bg-gradient-to-br from-[#C3D1F1] via-[#AEC1E9] to-[#7E99D4] w-full">
-      <div className="relative h-fit py-10">
-        <img
-          className="absolute -bottom-5 -right-10 rotate-90 h-96 object-cover"
-          src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684403948/Shadow1_h7wijp.svg"
-          alt="Shadow"
-        />
-        <div className="flex flex-col">
+      <div className="relative h-fit py-10 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { type: "spring", duration: 5, damping: 15 },
+          }}
+          className="flex flex-col"
+        >
           <Tag name="Know us better" />
           <h3 className="mx-auto font-bold text-3xl">IT Partnership</h3>
+        </motion.div>
+        <div className="mt-5 sm:hidden mx-auto w-80 h-80 md:pt-10 md:mt-0 drop-shadow-2xl cursor-pointer">
+          <img
+            data-atropos-offset="5"
+            className="p-2"
+            src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684741862/Man_Web_Developer_HD_1_vi1f0n.svg"
+            alt="MissingIMG"
+          />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-12 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 pb-8 sm:py-8">
           <div className="hidden md:block"></div>
           <div className="col-span-5 w-full h-full flex items-center md:pb-14">
-            <Atropos 
+            <Atropos
               shadow={false}
               highlight={false}
               duration={200}
-              className="mx-auto w-96 h-96 md:pt-10 md:mt-0 drop-shadow-2xl cursor-pointer">
+              className="hidden sm:block mx-auto w-96 h-96 md:pt-10 md:mt-0 drop-shadow-2xl cursor-pointer"
+            >
               <img
                 data-atropos-offset="5"
                 className="p-2"
@@ -37,7 +50,15 @@ const AboutUs = () => {
               />
             </Atropos>
           </div>
-          <div className="col-span-5 w-10/12 md:w-full xl:w-10/12 text-base mx-auto md:mx-0 flex flex-col gap-y-3 py-5 px-9 rounded-2xl drop-shadow-md bg-cust-light">
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { type: "spring", duration: 5, damping: 15 },
+            }}
+            className="col-span-5 w-10/12 md:w-full xl:w-10/12 text-base mx-auto md:mx-0 flex flex-col gap-y-3 py-5 px-9 rounded-2xl drop-shadow-md bg-cust-light"
+          >
             <p className="text-justify leading-5">
               <span className="font-semibold">IT Partnership</span> merupakan
               salah satu program kerja dari Kebiroan Pengembangan Informasi dan
@@ -62,7 +83,7 @@ const AboutUs = () => {
               }}
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
-              className="flex bg-cust-light mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg"
+              className="flex mx-auto lg:mx-0 bg-cust-light mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg"
             >
               <img
                 className="mx-auto h-12 md:h-16 w-12 md:w-16 p-2 -rotate-90"
@@ -70,14 +91,19 @@ const AboutUs = () => {
                 alt="MissingIcon"
               />
               <div
-                className={`text-lg font-semibold w-0 flex items-center whitespace-nowrap transition-all duration-300 overflow-hidden -translate-x-5 opacity-0
+                className={`hidden lg:flex text-lg font-normal w-0 items-center whitespace-nowrap transition-all duration-300 overflow-hidden -translate-x-5 opacity-0
                       ${isHover && "w-fit p-2 mr-4 translate-x-0 opacity-100"}
                   `}
               >
                 Download Booklet
               </div>
+              <div
+                className={`flex lg:hidden text-lg font-normal w-fit items-center whitespace-nowrap transition-all duration-300 overflow-hidden mr-4 pr-2 opacity-100`}
+              >
+                Download Booklet
+              </div>
             </div>
-          </div>
+          </motion.div>
           <div className="hidden md:block"></div>
         </div>
       </div>

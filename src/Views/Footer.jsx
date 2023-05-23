@@ -18,7 +18,7 @@ const Footer = ({ scrollTo }) => {
         <div className="w-full cust-outer-container">
           <div className="cust-container flex justify-start">
             <img
-              className="h-24 w-24 p-2 -rotate-90"
+              className="h-16 w-16 p-2 -rotate-90"
               src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"
               alt="MissingIcon"
             />
@@ -41,13 +41,13 @@ const Footer = ({ scrollTo }) => {
               <ButtonSlide name={"Line"} />
               <ButtonSlide name={"WA"} />
             </div>
-            <div className="md:absolute md:top-0 md:right-14 lg:right-20 xl:right-24 rounded-b-xl drop-shadow-[0_20px_22px_rgb(0,0,0,0.3)] lg:pt-24 px-5 pb-5 md:bg-white">
+            <div className="md:absolute md:top-0 md:right-14 lg:right-20 xl:right-24 rounded-b-xl drop-shadow-[0_20px_22px_rgb(0,0,0,0.3)] lg:pt-20 px-5 pb-5 md:bg-white">
               <div
                 onClick={() => handleClick(scrollTo)}
                 className="flex mx-auto w-fit rounded-full bg-cust-light animate-bounce mt-10 cursor-pointer drop-shadow-lg"
               >
                 <img
-                  className="h-20 lg:h-32 w-20 lg:w-32 p-4 rotate-180"
+                  className="h-20 lg:h-28 w-20 lg:w-28 p-4 rotate-180"
                   src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"
                   alt="MissingIcon"
                 />
@@ -57,13 +57,13 @@ const Footer = ({ scrollTo }) => {
           <div className="cust-container py-2 flex flex-col justify-center">
             <div className="drop-shadow-xl">
               <h3 className="font-bold text-center text-2xl mt-7 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] to-[#FA54B8]">
-                Powered by BEM FILKOM UB 2023
+                Powered by <a href="https://bemfilkom.ub.ac.id/" className="hover:border-b-2 opacity-80">BEM FILKOM UB 2023</a>
               </h3>
             </div>
             <div className="mb-6 border-t-2 border-cust-blue"></div>
             <span className="block text-sm text-center text-cust-blue font-semibold">
               © 2023{" "}
-              <a href="/" className="hover:underline">
+              <a href="https://bemfilkom.ub.ac.id/" className="hover:underline">
                 Biro Pengembangan Informasi & Teknologi™
               </a>
             </span>
