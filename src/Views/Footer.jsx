@@ -56,7 +56,7 @@ const Footer = ({ scrollTo }) => {
           </div>
           <div className="cust-container py-2 flex flex-col justify-center">
             <div className="drop-shadow-xl">
-              <h3 className="font-bold text-center text-2xl mt-7 mb-5 bg-clip-text text-transparent bg-gradient-to-r from-[#3561C0] to-[#FA54B8]">
+              <h3 className="font-bold text-center text-2xl mt-7 mb-5 text-cust-blue">
                 Powered by <a href="https://bemfilkom.ub.ac.id" className="hover:border-b-2 opacity-80">BEM FILKOM UB 2023</a>
               </h3>
             </div>
