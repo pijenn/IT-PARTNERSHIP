@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <div className="max-w-[1380px] mx-auto overflow-hidden font-monserrat">
+      <div className="cust-outer-container mx-auto overflow-hidden font-monserrat">
         <Navbar
           sendIsScroll={isScroll}
           moveTo={{
