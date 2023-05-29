@@ -34,7 +34,7 @@ const Testimonial = () => {
             {DataTesti.map((item) => {
               return (
                 <SwiperSlide key={item.id}>
-                  <div className="relative overflow-hidden grid grid-cols-12 h-fit sm:h-40 mb-2">
+                  <div className="relative overflow-hidden grid grid-cols-12 h-fit sm:h-56 mb-2">
                     <img
                       className="absolute -top-1 w-8"
                       src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684579951/Petik_ksgnkj.svg"
