@@ -50,7 +50,6 @@ const Testimonial = () => {
                           <img
                             className="w-full h-full"
                             src={item.logo}
-                            alt="MissingIMG"
                           />
                         </div>
                         <h3 className="sm:whitespace-nowrap font-bold flex items-center text-sm">
