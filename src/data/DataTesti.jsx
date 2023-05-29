@@ -19,7 +19,7 @@ const DataTesti = [
   },
   {
     id: 4,
-    msg: "Website BEM Filkom Nawasena menggunakan warna yang cerah dan harmonis membuatnya terlihat menarik. Saya sangat mengapresiasi perbaikan yang dilakukan dari versi sebelumnya, terutama penambahan fitur filter pada halaman kabar filkom yang memudahkan pengguna untuk mencari informasi yang mereka butuhkan. Dengan segala perbaikan tersebut, saya memberikan rating 9/10 untuk website ini.",
+    msg: "Website BEM Filkom Nawasena menggunakan warna yang cerah dan harmonis membuatnya terlihat menarik. Saya sangat mengapresiasi perbaikan yang dilakukan dari versi sebelumnya, terutama penambahan fitur filter pada halaman kabar filkom yang memudahkan pengguna untuk mencari informasi yang mereka butuhkan.",
     name: "Farrel Reginaldo FILKOM 21",
     logo: "",
   },

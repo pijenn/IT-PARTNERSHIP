@@ -47,7 +47,7 @@ const Testimonial = () => {
                       </p>
                       <div className="flex justify-start gap-x-2 w-full mt-auto pb-10">
                         <div className={`w-10 h-10 hidden sm:flex rounded-full
-                          ${item.logo === "" && "hidden"}
+                          ${item.logo === "" && "sm:hidden"}
                         `}>
                           <img
                             className="w-full h-full"
