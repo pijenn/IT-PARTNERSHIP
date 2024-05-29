@@ -11,9 +11,13 @@ export default {
         monserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        "cust-blue": "#19397F",
-        "cust-sky": "#89A4DE",
-        "cust-light": "#F9F9F9"
+        "cust-blue": "#F3C86A",
+        "cust-sky": "#F3C86A",
+        "cust-light": "#F9F9F9",
+        "cust-yellow" : "#F3C86A",
+        "cust-pink" : "#E02DAC",
+        "cust-violet" : "#881F86",
+        "cust-purple" : "#12021D"
       },
     },
   },

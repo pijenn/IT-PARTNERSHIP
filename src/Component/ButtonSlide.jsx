@@ -18,7 +18,7 @@ const ButtonSlide = ({ name }) => {
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
       className={`flex mt-2 w-fit cursor-pointer rounded-full drop-shadow-md hover:drop-shadow-lg transition-all duration-300
-                    ${isHover && "lg:bg-slate-300 transition-all duration-300"}
+                    ${isHover && "lg: bg-gradient-to-r lg:from-cust-yellow lg:to-cust-violet transition-all duration-300"}
       `}
     >
       <img

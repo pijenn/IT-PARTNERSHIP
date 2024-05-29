@@ -1,21 +1,21 @@
 const DataTesti = [
   {
     id: 1,
-    msg: "Gaada kritik, udah keren banget makasih banyak PIT bantuannya di oprec staff ahli 2023!!!",
-    name: "BEM FILKOM UB 2023",
-    logo: "https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg",
+    msg: "Gaada kritik, udah keren banget makasih banyak PIT bantuannya di oprec staff ahli 2024!!!",
+    name: "BEM FILKOM UB 2024",
+    logo: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1717003762/logoPolos_zvkiby.png",
   },
   {
     id: 2,
-    msg: "Tidak ada kritik maupun saran, sudah baik dan sangat membantu. Terima kasih dan semangat terus untuk teman-teman PIT ✊🏻",
-    name: "SCHOTIVAL 2023",
-    logo: "https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg",
+    msg: "Tidak ada, dari pelayanan yang komunikatif sampe eksekusi yang efektif, semuanya udah bagus banget. Lovyu, PIT 💕",
+    name: "Leader Of Tommorow 5.0",
+    logo: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1717003762/logoPolos_zvkiby.png",
   },
   {
     id: 3,
     msg: "semangat terus buat temen2 pit kalian keren 🙌🏻",
     name: "PKKMB, HOLOGY, ARTROPOLIS, FILAFEST 2023",
-    logo: "https://res.cloudinary.com/dr0lbokc5/image/upload/v1684387560/Logo_BEM_nxphj5.svg",
+    logo: "https://res.cloudinary.com/dkncrhkfo/image/upload/v1717003762/logoPolos_zvkiby.png",
   },
   {
     id: 4,
