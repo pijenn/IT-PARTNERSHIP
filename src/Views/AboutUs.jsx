@@ -24,7 +24,7 @@ const AboutUs = () => {
         >
            <Tag name="Know Us Better" />
         </motion.div>
-        <div className="flex items-center justify-items-center mt-20 lg:mt-10 md:mt-10 xl:mt-10 pb-8 lg:py-8  px-6 flex-col">
+        <div className="flex items-center justify-items-center mt-20 lg:mt-8 md:mt-8 xl:mt-8 pb-8 lg:py-8  px-6 flex-col">
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{
