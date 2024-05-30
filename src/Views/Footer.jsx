@@ -57,14 +57,14 @@ const Footer = ({ scrollTo }) => {
           <div className="cust-container py-2 flex flex-col justify-center">
             <div className="drop-shadow-xl">
               <h3 className="font-bold text-center text-2xl mt-7 mb-5 text-cust-blue">
-                Powered by <a href="https://bemfilkom.ub.ac.id" className="hover:border-b-2 opacity-80">BEM FILKOM UB 2024</a>
+                Powered by <a href="https://bemfilkom.ub.ac.id" className="hover:border-b-2 opacity-80">BEM FILKOM UB 2024 🧡</a>
               </h3>
             </div>
             <div className="mb-6 border-t-2 border-cust-blue"></div>
             <span className="block text-sm text-center text-cust-blue font-semibold">
               © 2024{" "}
               <a href="https://bemfilkom.ub.ac.id/" className="hover:underline">
-                Biro Pengembangan Informasi & Teknologi™
+                Biro Pengembangan Informasi & Teknologi ™
               </a>
             </span>
           </div>

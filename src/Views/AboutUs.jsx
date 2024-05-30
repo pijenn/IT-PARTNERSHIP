@@ -24,7 +24,7 @@ const AboutUs = () => {
         >
            <Tag name="Know Us Better" />
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-12 pb-8 sm:py-8">
+        <div className="flex items-center justify-items-center mt-20 lg:mt-10 md:mt-10 xl:mt-10 pb-8 lg:py-8  px-6 flex-col">
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{
@@ -32,10 +32,10 @@ const AboutUs = () => {
               x: 0,
               transition: { type: "spring", duration: 5, damping: 15 },
             }}
-            className=" md:w-full xl:w-10/12 text-base mx-auto md:mx-0 flex flex-col"
+            className=" md:w-full  text-base mx-auto md:mx-0 flex flex-col"
           >
-          
           </motion.div>
+          <iframe src="https://heyzine.com/flip-book/bb2b914978.html" className="mx-auto" style={{ width: '100%', maxWidth: '1000px', height: '400px' }}></iframe>
         </div>
       </div>
     </div>
