@@ -75,7 +75,7 @@ const Testimonial = () => {
             })}
           </Swiper>
           <div 
-            className="absolute button-next-slide cursor-pointer -right-5 top-1/2 -translate-y-1/2 z-auto rounded-full bg-transparent border-2 border-cust-yellow drop-shadow-md hover:translate-x-1 transition-all duration-300">
+            className="absolute button-next-slide cursor-pointer -right-5 top-1/2 -translate-y-1/2 z-auto rounded-full bg-cust-yellow border-2 border-cust-yellow drop-shadow-md hover:translate-x-1 transition-all duration-300">
             <img
               className="mx-auto h-12 md:h-16 w-12 md:w-16 p-2 -rotate-90 group-hover:translate-x-1 "
               src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"

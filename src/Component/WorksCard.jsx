@@ -45,7 +45,7 @@ const WorksCard = () => {
           </p>
           <div className="absolute hidden sm:block translate-x-1/4  -bottom-40 md:-bottom-10 md:translate-x-3/4 md:right-40 lg:-bottom-44 lg:-right-32 lg:translate-x-1/3 xl:-bottom-14 xl:-right-96 xl:left-96 xl:translate-x-64 -rotate-[10deg] lg:-rotate-[20deg] pointer-events-none transition-all duration-700 group-hover:lg:translate-x-2/3 group-hover:xl:translate-x-64">
             <img
-              className="lg:group-hover:scale-105 transition-all duration-300 w-4/6 object-cover rounded-lg"
+              className="lg:group-hover:scale-105 transition-all duration-300 w-3/6 object-cover rounded-lg"
               src={item.img}
               alt="MissingIMG"
             />
