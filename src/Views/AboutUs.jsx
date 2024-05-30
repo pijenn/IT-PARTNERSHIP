@@ -20,7 +20,7 @@ const AboutUs = () => {
             y: 0,
             transition: { type: "spring", duration: 5, damping: 15 },
           }}
-          className="flex flex-col"
+          className="flex flex-col pt-10"
         >
            <Tag name="Know Us Better" />
         </motion.div>
@@ -32,7 +32,7 @@ const AboutUs = () => {
               x: 0,
               transition: { type: "spring", duration: 5, damping: 15 },
             }}
-            className=" md:w-full  text-base mx-auto md:mx-0 flex flex-col"
+            className=" md:w-full lg:w-full md:w-full text-base mx-auto md:mx-0 flex flex-col"
           >
           </motion.div>
           <iframe src="https://heyzine.com/flip-book/bb2b914978.html" className="mx-auto" style={{ width: '100%', maxWidth: '1000px', height: '400px' }}></iframe>

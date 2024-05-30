@@ -11,7 +11,7 @@ const Works = () => {
             opacity: 1,
             y: 0,
             transition: { type: "spring", duration: 5, damping: 15 },
-          }} className="flex flex-col cust-container">
+          }} className="flex flex-col cust-container pt-10">
         <Tag name="Our Works" />
         </motion.div>
         <div className="flex cust-container flex-col items-center">

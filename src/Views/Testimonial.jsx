@@ -20,19 +20,19 @@ const Testimonial = () => {
           y: 0,
           transition: { type: "spring", duration: 5, damping: 15 },
         }}
-        className="flex flex-col">
+        className="flex flex-col pt-10">
         <Tag name="Testimonial" />
         </motion.div>
-        <div className="relative mx-auto w-4/5 md:w-3/5 lg:max-w-lg pb-6 px-6 pt-10 my-16 rounded-lg border-2 border-cust-yellow  bg-gradient-to-b from-cust-violet to-cust-purple">
+        <div className="relative mx-auto w-4/5 md:w-3/5 lg:max-w-lg pb-6 px-6 pt-10 my-16 rounded-lg border-2 border-cust-yellow  bg-transparent">
           <Swiper
             modules={[Navigation, Pagination]}
             loop={true}
             navigation={{
               nextEl: ".button-next-slide",
             }}
-            pagination={{ clickable: true 
+            pagination={{ clickable: true
              }}
-            spaceBetween={20}
+            spaceBetween={10}
             slidesPerView={1}
             className="py-1 "
           >
@@ -75,7 +75,7 @@ const Testimonial = () => {
             })}
           </Swiper>
           <div 
-            className="absolute button-next-slide cursor-pointer -right-5 top-1/2 -translate-y-1/2 z-auto rounded-full bg-cust-yellow drop-shadow-md hover:translate-x-1 transition-all duration-300">
+            className="absolute button-next-slide cursor-pointer -right-5 top-1/2 -translate-y-1/2 z-auto rounded-full bg-transparent border-2 border-cust-yellow drop-shadow-md hover:translate-x-1 transition-all duration-300">
             <img
               className="mx-auto h-12 md:h-16 w-12 md:w-16 p-2 -rotate-90 group-hover:translate-x-1 "
               src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1684394901/DownArrow_dthzsg.svg"

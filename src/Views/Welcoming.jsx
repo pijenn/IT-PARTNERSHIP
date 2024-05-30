@@ -19,7 +19,7 @@ const Welcoming = ({ scrollTo }) => {
             }}
             className="flex justify-center font-extrabold mx-auto md:mx-0 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-cust-blue"
           >
-            <span className="ml-2 pb-2 bg-clip-text text-transparent bg-gradient-to-t from-[#E02DAC] to-[#F3C86A]">
+            <span className="ml-2 pb-2 bg-clip-text text-transparent bg-gradient-to-b from-cust-yellow to-cust-violet">
               <TypeAnimation
                 sequence={["IT PARTNERSHIP.", 1000, "IT Partnership.", 1000]}
                 repeat={Infinity}
